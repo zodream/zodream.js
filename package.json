@@ -1,0 +1,39 @@
+{
+  "name": "zodream",
+  "version": "1.0.0",
+  "description": "game framework and server",
+  "main": "index.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "start": "npm run serve",
+    "serve": "node dist/examples/server.js",
+    "build": "npm run build-ts && npm run tslint",
+    "build-ts": "tsc",
+    "watch-ts": "tsc -w",
+    "tslint": "tslint -c tslint.json -p tsconfig.json",
+    "debug": "npm run build && npm run watch-debug",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zodream/zodream.js.git"
+  },
+  "keywords": [
+    "zodream"
+  ],
+  "author": "zodream",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zodream/zodream.js/issues"
+  },
+  "homepage": "https://github.com/zodream/zodream.js#readme",
+  "devDependencies": {
+    "@types/node": "^10.12.18",
+    "node-sass": "^4.11.0",
+    "ts-node": "^7.0.1",
+    "tslint": "^5.12.0",
+    "typescript": "^3.2.2"
+  }
+}
